@@ -1,5 +1,17 @@
 # Release Notes
 
+## v1.1.1 - April 2026
+
+### Bug fix
+
+**Intelligence tab - Day x Hour Heatmap**
+
+Fixed blank heatmap caused by incorrect date parsing. Medicus exports dates in DD/MM/YYYY format; the heatmap was using JavaScript's native `Date` constructor which expects ISO format (YYYY-MM-DD), causing every row to be silently skipped. All cells rendered as grey with no counts. Date parsing now handles DD/MM/YYYY correctly.
+
+Also added explicit "no data" messages when the required CSV type has not been loaded, so it is clear which file is needed rather than showing a blank chart.
+
+---
+
 ## v1.1.0 - April 2026
 
 ### New features

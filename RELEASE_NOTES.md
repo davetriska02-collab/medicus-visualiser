@@ -1,5 +1,26 @@
 # Release Notes
 
+## v1.1.0 - April 2026
+
+### New features
+
+**Intelligence tab**
+
+New dedicated tab with two chart sections:
+
+- Day × Hour Activity Heatmap - consultations plotted on a 7-day × 13-hour grid (07:00-19:00). Toggle between volume intensity (white to NHS blue gradient) and mode split (proportional colour bands showing online/F2F/phone per cell). Hover for exact counts.
+- DNA Rate by Booking Lead Time - bar chart showing DNA % for appointments booked same-day, 1-3, 4-7, 8-14, and 15+ days ahead. Paired with appointment volume by lead time to show where DNA risk concentrates.
+
+**Workload Intensity Score (Staff Activity tab)**
+
+Composite score per clinician: Consultations + (Document Tasks + Results Tasks) × 1.5 + (Routine Rx + Non-Routine Rx) × 0.5 + Medication Reviews. Z-score normalised and colour coded green (below average), amber (above average), red (high outlier, z > 1). Respects the All Staff / GPs Only / Non-Clinical filter.
+
+**High-Frequency Attenders (Consultations tab)**
+
+Patients grouped into visit frequency bands (1-2, 3-5, 6-10, 11-20, 21+ visits). Two charts: patient count per band, and 100% stacked mode split (online/F2F/phone/other) per band. Three KPIs: total unique patients, count of patients with 6+ visits, and the share of all consultations accounted for by the top 5% of attenders.
+
+---
+
 ## v1.0.0 - April 2026
 
 Initial public release.

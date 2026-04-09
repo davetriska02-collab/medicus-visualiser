@@ -24,18 +24,18 @@ Multiple files of the same type can be loaded together to stitch date ranges sea
 
 ## Usage
 
-### Option A - Run the exe (recommended for NHS computers)
+### Option A - Open the HTML file (recommended)
 
-1. Download `MedicusVisualiser.exe` from the [latest release](../../releases/latest)
-2. Double-click - no installation, no admin rights needed
-3. Your browser opens with the dashboard ready to use
+1. Download `medicus-dashboard-standalone.html` from the [latest release](../../releases/latest)
+2. Double-click or open in any modern browser (Chrome, Edge, Firefox)
+3. No server, no internet, no install, no admin rights needed
 4. Drag your Medicus CSV exports into the drop zone and click Launch Dashboard
 
-### Option B - Open the HTML directly
+### Option B - Use the batch launcher (Windows)
 
-1. Download `medicus-dashboard-standalone.html`
-2. Double-click or open in any modern browser (Chrome, Edge, Firefox)
-3. No server, no internet, no install needed
+1. Download both `launch.bat` and `medicus-dashboard-standalone.html` into the same folder
+2. Double-click `launch.bat` - your browser opens with the dashboard ready
+3. No .exe, no installation, no admin rights needed
 
 ## Supported CSV exports
 
@@ -47,28 +47,16 @@ Multiple files of the same type can be loaded together to stitch date ranges sea
 
 The dashboard auto-detects which file type you have dropped based on column headers.
 
-## Building from source
-
-Requires Python 3.x and PyInstaller:
-
-```
-pip install pyinstaller
-cd medicus-visualiser
-build.bat
-```
-
-Output: `dist/MedicusVisualiser.exe`
-
 ## Privacy and data governance
 
 All data processing happens locally in the browser. No data is transmitted anywhere. Patient names are redacted by default. The tool is suitable for use on NHS workstations subject to local information governance policies.
 
 ## Requirements
 
-- Windows 7 or later (for the exe)
-- Any modern browser for the standalone HTML version
+- Any modern browser (Chrome, Edge, Firefox)
 - No admin rights required
 - No internet connection required
+- No .exe or software installation needed
 
 ## Licence
 
